@@ -36,28 +36,12 @@ $(document).ready(function() {
   
     $(function() {
       typed.typed({
-        strings: ["Bogdan Cristian."],
+        strings: ["Photo Gallery."],
         typeSpeed: 500,
         loop: true,
       });
     });
-  
-  
-    // ========================================================================= //
-    //  Owl Carousel Services
-    // ========================================================================= //
-  
-  
-    $('.services-carousel').owlCarousel({
-        autoplay: true,
-        loop: true,
-        margin: 20,
-        dots: true,
-        nav: false,
-        responsiveClass: true,
-        responsive: { 0: { items: 1 }, 768: { items: 2 }, 900: { items: 4 } }
-      });
-  
+
   
   });
   
