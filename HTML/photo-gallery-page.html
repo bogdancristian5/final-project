@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Photo Gallery</title>
 
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Bootstrap CSS File -->
   <link href="/CSS/bootstrap.css" rel="stylesheet">
@@ -23,30 +23,23 @@
 <body>
 
   <!-- start section navbar -->
-  <nav id="main-nav">
-    <div class="row">
-      <div class="container">
 
-        <div class="logo">
-          <a href="/index.html" />
-          <img src="/assets/homepageicon.jpg" id="homepageicon" alt="homepageicon" />
-          </a>
-        </div>
-
-        <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
-
-        <ul class="nav-menu list-unstyled">
-          <li><a href="#header" class="smoothScroll">Go Top</a></li>
-
-          <li><a href="/HTML/my-cv-page.html" class="smoothScroll">My CV</a></li>
-          <li><a href="https://www.facebook.com/bogdan.cristian.336" target="blank">Facebook</a></li>
-          <li><a href="https://www.instagram.com/bogdancristian5/" target="blank">Instagram</a></li>
-          <li><a href="https://www.linkedin.com/in/bogdan-cristian-386236162/" target="blank">LinkedIn</a></li>
-        </ul>
-
-      </div>
+  <div class="topnav" id="myTopnav">
+    <a href="/index.html" />
+    <img src="/assets/homepageicon.jpg" id="homepageicon" alt="homepageicon" />
+    </a>
+    <div id="myLinks">
+      <a href="#header" class="smoothScroll">Go Top</a>
+      <a href="/HTML/about-page.html" class="smoothScroll">About</a>
+      <a href="/HTML/my-cv-page.html" class="smoothScroll">My CV</a>
+      <a href="https://www.facebook.com/bogdan.cristian.336" target="blank">Facebook</a>
+      <a href="https://www.instagram.com/bogdancristian5/" target="blank">Instagram</a>
+      <a href="https://www.linkedin.com/in/bogdan-cristian-386236162/" target="blank">LinkedIn</a>
     </div>
-  </nav>
+    <a class="icon" onclick="myFunction2()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
   <!-- End section navbar -->
 
 
@@ -182,14 +175,33 @@
 
   <!-- start section footer -->
   <div id="footer" class="text-center">
-    <div class="container">
-
-
       <p>&copy; Copyrights Bogdan Cristian. All rights reserved.</p>
-
-    </div>
   </div>
 
+  <script>
+    function myFunction2() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+  <script>
+    window.onscroll = function () { myStickyFunction() };
+
+    var navbar = document.getElementById("myTopnav");
+    var sticky = navbar.offsetTop;
+
+    function myStickyFunction() {
+      if (window.pageYOffset >= sticky) {
+        myTopnav.classList.add("sticky")
+      } else {
+        myTopnav.classList.remove("sticky");
+      }
+    }
+  </script>
 
   <!-- JavaScript Libraries -->
   <script src="/JS/jquery.min.js"></script>

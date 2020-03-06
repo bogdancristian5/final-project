@@ -19,44 +19,27 @@
 
   <!-- Responsive css -->
   <link href="/CSS/responsive.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
-
-
-  <nav class="topnav" id="main-nav">
-    <div class="row">
-      <div class="container">
-
-        <div class="logo">
-          <a href="/index.html" />
-          <img src="/assets/homepageicon.jpg" id="homepageicon" alt="homepageicon" />
-          </a>
-        </div>
-
-        <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
-        <button class="navbar-toggler first-button hamburger-button" type="button">
-          <span class="dark-blue-text">
-            <i id="hamButton" class="fas fa-bars fa-1x hamburger-img"></i>
-          </span>
-        </button>
-        <ul id="menuList" class="nav-menu list-unstyled">
-          <li><a href="#header" class="smoothScroll">Go Top</a></li>
-
-
-          <li><a href="/HTML/my-cv-page.html" class="smoothScroll">My CV</a></li>
-          <li><a href="/HTML/photo-gallery-page.html" class="smoothScroll">Photo Gallery</a></li>
-          <li><a href="https://www.facebook.com/bogdan.cristian.336" target="blank">Facebook</a></li>
-          <li><a href="https://www.instagram.com/bogdancristian5/" target="blank">Instagram</a></li>
-          <li><a href="https://www.linkedin.com/in/bogdan-cristian-386236162/" target="blank">LinkedIn</a></li>
-        </ul>
-
-      </div>
+  <div class="topnav" id="myTopnav">
+    <a href="/index.html" />
+    <img src="/assets/homepageicon.jpg" id="homepageicon" alt="homepageicon" />
+    </a>
+    <div id="myLinks">
+      <a href="#header" class="smoothScroll">Go Top</a>
+      <a href="/HTML/my-cv-page.html" class="smoothScroll">My CV</a>
+      <a href="/HTML/photo-gallery-page.html" class="smoothScroll">Photo Gallery</a>
+      <a href="https://www.facebook.com/bogdan.cristian.336" target="blank">Facebook</a>
+      <a href="https://www.instagram.com/bogdancristian5/" target="blank">Instagram</a>
+      <a href="https://www.linkedin.com/in/bogdan-cristian-386236162/" target="blank">LinkedIn</a>
     </div>
-  </nav>
-
+    <a class="icon" onclick="myFunction2()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
   <!-- End section navbar -->
 
 
@@ -167,7 +150,7 @@
         <h4>5. Sleeping</h4>
 
 
-        <p class="separator"> I had to complete my Top 5 list with this. When it's rainy outside, 
+        <p class="separator"> I had to complete my Top 5 list with this. When it's rainy outside,
           this is the first thing I'd do. </p>
 
       </div>
@@ -187,17 +170,16 @@
         <h1 class="education">Education</h1>
 
         <h4>2019-Present</h4>
-        <a href="https://scoalainformala.ro/?gclid=Cj0KCQiA1-3yBRCmARIsAN7B4H2KViLM_OF8sgnQ8U84-1DcdgM6C_4CFFjpH9tXYfidW7kOar-VDhUaAqMYEALw_wcB" target="blank"
-        <p class="separator"> 
+        <a href="https://scoalainformala.ro/?gclid=Cj0KCQiA1-3yBRCmARIsAN7B4H2KViLM_OF8sgnQ8U84-1DcdgM6C_4CFFjpH9tXYfidW7kOar-VDhUaAqMYEALw_wcB"
+          target="blank" <p class="separator">
           Scoala Informala de IT din Cluj Napoca </p> </a>
 
       </div>
-      
+
       <div class="education-block">
         <h4>2017 - Trainee - Erasmus Student Exchange</h4>
 
-        <a href="https://www.pcz.pl/en/content/about-university" target="blank"
-        <p class="separator"> 
+        <a href="https://www.pcz.pl/en/content/about-university" target="blank" <p class="separator">
           Czestochowa University of Technology </p> </a>
 
       </div>
@@ -205,19 +187,17 @@
       <div class="education-block">
 
         <h4>2016-2019</h4>
-        <a href="http://www.uab.ro/" target="blank"
-        <p class="separator"> 
+        <a href="http://www.uab.ro/" target="blank" <p class="separator">
           "1 Decembrie 1918" University of Alba Iulia, Alba Iulia </p> </a>
 
       </div>
-      
+
 
       <div class="education-block">
 
 
         <h4>2010-2014</h4>
-        <a href="https://www.hcc.ro/" target="blank"
-        <p class="separator"> 
+        <a href="https://www.hcc.ro/" target="blank" <p class="separator">
           "Horea, Closca si Crisan" National College, Alba Iulia </p> </a>
 
       </div>
@@ -227,7 +207,7 @@
     </div>
 
   </div>
-  
+
   <!-- End section Education -->
 
 
@@ -254,7 +234,7 @@
           </div>
 
 
-<!-- CONTACT FORM -->
+          <!-- CONTACT FORM -->
 
 
           <div class="col-lg-6">
@@ -311,15 +291,40 @@
 
 
   <!-- start section footer -->
-  <div id="footer" class="text-center">
+  <footer id="footer" class="text-center">
     <div class="container">
 
 
       <p>&copy; Copyrights Bogdan Cristian. All rights reserved.</p>
 
     </div>
-  </div>
-  <!-- End section footer -->
+  </footer>
+
+  <script>
+    function myFunction2() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+  <script>
+    window.onscroll = function () { myStickyFunction() };
+
+    var navbar = document.getElementById("myTopnav");
+    var sticky = navbar.offsetTop;
+
+    function myStickyFunction() {
+      if (window.pageYOffset >= sticky) {
+        myTopnav.classList.add("sticky")
+      } else {
+        myTopnav.classList.remove("sticky");
+      }
+    }
+  </script>
+
 
   <!-- JavaScript Libraries -->
   <script src="/JS/jquery.min.js"></script>

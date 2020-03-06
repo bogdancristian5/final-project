@@ -78,6 +78,7 @@ a:hover, a:focus {
   text-decoration: underline;
 }
 
+
 nav ul li a {
   padding: 2px 0 0 0;
   position: relative;
@@ -108,14 +109,8 @@ p {
   font-size: 20px;
 }
 
-::-moz-selection {
-  background: #b8a07e;
-  color: #fff;
-}
-
-::selection {
-  background: #b8a07e;
-  color: #fff;
+#date{
+  font-size: 50px;
 }
 
 .btn {
