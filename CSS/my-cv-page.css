@@ -199,19 +199,22 @@
     
     @media all and (max-width: 601px) {
         #cv {
-            width: 95%;
+            width: 85%;
             margin: 10px auto;
             min-width: 280px;
         }
         
         #headshot {
-            display: none;
+            /* display: none; */
+            position: absolute;
+            right: 20px;
         }
         
         #name, #contactDetails {
-            float: none;
+            float: left;
+            max-width: 250px;
             width: 100%;
-            text-align: center;
+            text-align: left;
         }
         
         .sectionTitle, .sectionContent {
