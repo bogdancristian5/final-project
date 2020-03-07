@@ -220,7 +220,7 @@ nav ul li a {
 #header .header-content {
   height: 40vh;
   text-align: left;
-  margin-left: 60px;
+  /* margin-left: 60px; */
   width: 100%;
   display: flex;
   justify-content: center;
@@ -472,11 +472,14 @@ nav ul li a {
 
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
+@media (min-width: 200px) and (max-width: 600px) {
   .topnav a {display: none;}
   .topnav a.icon {
     float: right;
-    display: block;
+    display: block;  
+  }
+  #header{
+    width: 100%;
   }
 }
 
