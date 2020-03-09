@@ -1,7 +1,7 @@
 
 body {
   background: #ffffff;
-  color: #898989;
+  color: #888787;
   font-family: 'Poppins', helvetica;
   font-size: 15px;
   font-weight: 300;
@@ -10,14 +10,16 @@ body {
   overflow-x: hidden;
   margin: 0 auto;
   padding: 0;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
+/* Homepage icon */
 
+#homepageicon{
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+}
 
 
 .dropdown-content {
@@ -29,7 +31,6 @@ body {
   z-index: 1;
 }
 
-
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -38,14 +39,15 @@ body {
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: rgb(238, 104, 104);
+  color: black;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-h1, h4, h6 {
+h1, h4 {
   margin: 0;
 }
 
@@ -58,42 +60,11 @@ h4 {
 a {
   color: #292929;
   text-decoration: none;
-  -moz-transition: all 0.5s ease-in-out 0s;
-  -ms-transition: all 0.5s ease-in-out 0s;
-  -o-transition: all 0.5s ease-in-out 0s;
-  -webkit-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
-}
-
-a:hover {
-  -moz-transition: all 0.5s ease-in-out 0s;
-  -ms-transition: all 0.5s ease-in-out 0s;
-  -o-transition: all 0.5s ease-in-out 0s;
-  -webkit-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
 }
 
 a:hover, a:focus {
-  color: #b8a07e;
+  color: rgb(238, 104, 104);
   text-decoration: underline;
-}
-
-
-nav ul li a {
-  padding: 2px 0 0 0;
-  position: relative;
-  display: block;
-  font-size: 12px;
-  color: #999999;
-  letter-spacing: 0.1em;
-  font-weight: 500;
-  line-height: 14px;
-  text-transform: uppercase;
-  -moz-transition: all 0.5s ease-in-out 0s;
-  -ms-transition: all 0.5s ease-in-out 0s;
-  -o-transition: all 0.5s ease-in-out 0s;
-  -webkit-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
 }
 
 p {
@@ -113,18 +84,24 @@ p {
   font-size: 50px;
 }
 
+/* DISPLAY CURRENT TIME */
+
+#timeID{ 
+  font-size: 30px;
+  font-family: var(--Rubik);
+  color: #999999;
+
+}
+
 .btn {
   background: rgb(51, 51, 51);
   margin-bottom: 30px;
   margin-top: 20px;
-  
   border-radius: 20px;
   color: rgb(236, 219, 219);
   font-size: 15px;
   text-transform: uppercase;
 }
-
-
 
 .btn:hover, .btn:focus {
   color: rgb(8, 8, 8);
@@ -133,76 +110,16 @@ p {
   box-shadow: 5px 10px 20px white;
 }
 
-.padDiv {
-  padding: 30px 20px;
-}
-
-.section-title {
-  margin-bottom: 70px;
-}
-
-.section-title h2 {
-  font-size: 25px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-.form-control {
-  background-color: transparent;
-  border: 1px solid #999;
-  border-radius: 0;
-  color: red;
-  font-size: 12px;
-  font-weight: 500;
-  height: 50px;
-  letter-spacing: 0.1em;
-  padding-left: 10px;
-  margin: 0 0 25px 0;
-  line-height: 14px;
-  text-transform: uppercase;
-}
-
-.form-control:focus {
-  box-shadow: none;
-  outline: 0 none;
-}
-
-.paddsection {
-  padding-top: 90px;
-  padding-bottom: 90px;
-}
-
-.paddsections {
-  padding-top: 90px;
-  padding-bottom: 90px !important;
-}
-
-.hvr-shutter-in-horizontal::before {
-  background: #333;
-}
-
-.hvr-shutter-in-horizontal:hover {
-  background: #b8a07e;
-}
-
-.mb-30 {
-  margin-bottom: 30px;
-}
-
-/*-----------------------------------------------------------------------------------*/
-/*  Navbar Top
-/*-----------------------------------------------------------------------------------*/
+/* NAVBAR !!!!!!!!!!! */
 
 nav {
   position: fixed;
-  background: #fff;
+  background: rgb(255, 255, 255);
   z-index: 1000;
   width: 100%;
   padding: 20px;
   display: none;
-  -webkit-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
-  -moz-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
-  box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
+  box-shadow: 0px 2px 92px 0px rgba(95, 92, 92, 0.9);
 }
 
 .nav-menu {
@@ -278,9 +195,48 @@ nav ul li a {
   color: #afafaf;
 }
 
-/*----------------------------------------------------------------------------------*/
-/*  Header
-/*-----------------------------------------------------------------------------------*/
+/* HEADER !!!!!!!!!!!! */
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --Sniglet-font: "Sniglet", cursive;
+  --Rubik: "Rubik", cursive;
+  --Patua: "Patua One", cursive;
+  --Lobster: "lobster", cursive;
+  --light-black: #2e2c2caf;
+  --bggradient: linear-gradient(to bottom, #030303, #a09090);
+  --light-gray: rgba(255, 255, 255, 0.877);
+}
+
+header .row .col-md-7 {
+  padding: 22vmin 1vmin;
+  padding-bottom: 35vmin;
+}
+
+header .row .col-md-5 {
+  padding: 4.2vmin 1vmin;
+}
+
+header .row .col-md-5 img {
+  width: 90%;
+}
+
+header {
+  background: #000000;
+  background: var(--bggradient);
+}
+
+header .container .col-md-7 p {
+  padding: 1vmin 5vmin;
+}
+
+.primary-btn {
+  border-radius: 30px;
+  font-weight: bold;
+}
 
 #header {
   background: url("/assets/timesSquare-home.JPG") repeat scroll center center / cover;
@@ -317,265 +273,18 @@ nav ul li a {
   font-weight: 500;
 }
 
-.header-content .list-social li {
-  float: left;
-  margin-right: 20px;
-}
 
-.header-content .list-social li i {
-  color: #fff;
-  font-size: 15px;
-}
+/* FOOTER !!!!!!!!!!! */
 
-/*-----------------------------------------------------------------------------------*/
-/*  About-us
-/*-----------------------------------------------------------------------------------*/
-
-#about {
-  width: 100%;
-  height: auto;
-  background: #f7f7f7;
-  padding-top: 190px;
-}
-
-#about .div-img-bg {
-  padding-bottom: 30px;
-  border: 20px solid #b8a07e;
-}
-
-#about .div-img-bg .about-img img {
-  width: 100%;
-  box-shadow: 0px 0px 85px 0px rgba(0, 0, 0, 0.14);
-  margin-top: -60px;
-  margin-left: 40px;
-  height: 400px;
-  object-fit: cover;
-}
-
-#about .about-descr .p-heading {
-  font-family: 'Playfair Display', serif;
-  font-size: 28px;
-  text-align: left;
-}
-
-#about .about-descr .separator {
-  max-width: 80%;
-  margin-bottom: 0;
-  text-align: left;
-}
-
-
-
-
-/*-----------------------------------------------------------------------------------*/
-/*  Footer
-/*-----------------------------------------------------------------------------------*/
-
-#footer {
-  background: #f7f7f7;
+footer {
+  background: rgba(0, 0, 0, 0.8);
+  overflow-x: hidden;
+  padding: 14vmin 18vmin;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-#footer .socials-media {
-  width: 100%;
-}
-
-#footer .socials-media ul {
-  display: inline-block;
-  float: none;
-  margin: 0 0 20px 0;
-}
-
-#footer .socials-media ul li {
-  float: left;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-#footer .socials-media ul li a {
-  font-size: 24px;
-  color: #999;
-  letter-spacing: 0.1em;
-  font-weight: 500;
-  background: transparent;
-  text-transform: uppercase;
-  -moz-transition: all 0.5s ease-in-out 0s;
-  -ms-transition: all 0.5s ease-in-out 0s;
-  -o-transition: all 0.5s ease-in-out 0s;
-  -webkit-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
-}
-
-#footer .socials-media ul li a:hover {
-  color: #b8a07e;
-  -moz-transition: all 0.5s ease-in-out 0s;
-  -ms-transition: all 0.5s ease-in-out 0s;
-  -o-transition: all 0.5s ease-in-out 0s;
-  -webkit-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
-}
-
-#footer p {
-  font-size: 12px;
-  letter-spacing: 0.1em;
-  font-weight: 500;
-  margin-top: 0;
-  text-transform: uppercase;
-}
-
-.credits {
-  font-size: 13px;
-}
-
-
-/* Homepage icon */
-
-#homepageicon{
-  width: 50px;
-  height: 50px;
-  border-radius: 30px;
-}
-
-
-
-
-
-
-/* AL DOILEA CSS INTEGRAT AICI */
-
-
-@import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
-* {
-  box-sizing: border-box;
-}
-
-header,
-section {
-  overflow-x: hidden;
-}
-
-:root {
-  --Sniglet-font: "Sniglet", cursive;
-  --Rubik: "Rubik", cursive;
-  --Patua: "Patua One", cursive;
-  --Lobster: "lobster", cursive;
-  --light-black: #2e2c2caf;
-  --bggradient: linear-gradient(to bottom, #030303, #a09090);
-  --light-gray: rgba(255, 255, 255, 0.877);
-}
-
-.gallery {
-  -webkit-column-count: 3;
-  -moz-column-count: 3;
-  column-count: 3;
-  -webkit-column-width: 33%;
-  -moz-column-width: 33%;
-  column-width: 33%; }
-  .gallery .pics {
-  -webkit-transition: all 350ms ease;
-  transition: all 350ms ease; }
-  .gallery .animation {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1); }
-  
-  @media (max-width: 450px) {
-  .gallery {
-  -webkit-column-count: 1;
-  -moz-column-count: 1;
-  column-count: 1;
-  -webkit-column-width: 100%;
-  -moz-column-width: 100%;
-  column-width: 100%;
-  }
-  }
-  
-  @media (max-width: 400px) {
-  .btn.filter {
-  padding-left: 1.1rem;
-  padding-right: 1.1rem;
-  }
-  }
-
-
-.liberty-statue-photo{
-  margin-left: 40px;
-  margin-bottom: 100px;
-}
-
-
-
-header a {
-  font-family: var(--Sniglet-font);
-  font-size: 0.9em;
-  color: whitesmoke;
-}
-
-
-
-
-header .nav-item:last-child {
-  padding-right: 10.5em;
-}
-
-header .nav-item {
-  padding: 1.5em;
-}
-
-
-header .navbar-brand {
-  padding-left: 4rem;
-}
-
-header .nav-link:hover {
-  color: black;
-}
-
-header .row .col-md-7 {
-  padding: 22vmin 1vmin;
-  padding-bottom: 35vmin;
-}
-
-header .row .col-md-5 {
-  padding: 4.2vmin 1vmin;
-}
-
-header .row .col-md-5 img {
-  width: 90%;
-}
-
-header {
-  background: #ff512f;
-  /* fallback for old browsers */
-  background: var(--bggradient);
-}
-
-header .container .col-md-7 {
-  font-family: "Rubik", sans-serif;
-}
-
-header .container .col-md-7 h6 {
-  padding: 1vmin;
-  letter-spacing: 4px;
-}
-
-header .container .col-md-7 h1 {
-  font-size: 8.5vmin;
-  font-weight: bold;
-  padding: 0.1em 0em;
-}
-
-header .container .col-md-7 p {
-  padding: 1vmin 5vmin;
-}
-
-.primary-btn {
-  border-radius: 30px;
-  font-weight: bold;
-}
-
-/********** section 1 **************/
+/* SECTION 1 !!!!!!!!!!! */
 
 .section-1 {
   padding: 20vmin 0vmin;
@@ -584,24 +293,20 @@ header .container .col-md-7 p {
 
 .section-1 .row .col-md-6 .pray img {
   opacity: 0.8;
-  width: 80%;
-  border-radius: 0.2em;
+  width: 90%;
+  margin-left: 40px;
+  margin-bottom: 100px;
 }
 
-.section-1 .row .col-md-6:last-child {
-  position: relative;
-}
 
 .panel{
-  box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
-    
+  box-shadow: 0px 25px 35px rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 7vmin;
   left: -18vmin;
   background: white;
   border-radius: 3px;
-  padding: 3vmin 5vmin 20vmin 10vmin;
- 
+  padding: 3vmin 5vmin 10vmin 10vmin;
   font-family: var(--Rubik);
   z-index: 1;
 }
@@ -609,16 +314,16 @@ header .container .col-md-7 p {
 
 .section-1 .row .col-md-6 .panel h1 {
   font-weight: bold;
-  padding: 0.4em 0;
-  font-size: 2em;
+  padding: 10px 0;
+  font-size: 40px;
+  color: rgb(70, 67, 67);
 }
 
 .section-1 .row .col-md-6 .panel p {
-  font-size: 0.9em;
-  color: rgba(0, 0, 0, 0.5);
+  font-size: 25px;
 }
 
-/*  Section 2  */
+/*  Section 2  ---- PLANE COVER - STATISTIC NUMBERS */
 
 .cover {
   width: 100%;
@@ -666,7 +371,7 @@ header .container .col-md-7 p {
   padding-top: 3.5vmin;
   margin: 1rem;
   border-radius: 0.5em;
-  box-shadow: 1px 2px 50px 0px rgba(255, 0, 0, 0.349);
+  box-shadow: 1px 2px 50px 0px rgba(0, 0, 0, 0.349);
 }
 
 .numbers {
@@ -675,58 +380,10 @@ header .container .col-md-7 p {
 
 .numbers .about-section h1 {
   font-size: 5rem;
-  color: tomato;
+  color: rgb(224, 45, 45);
 }
 
-.numbers .about-section > p {
-  font-family: var(--Patua);
-}
-
-.purchase > h1 {
-  padding-top: 15vmin;
-  padding-bottom: 0.1em;
-  font-family: var(--Lobster);
-}
-
-.purchase > p {
-  color: var(--light-black);
-  font-size: 3vmin;
-  padding-bottom: 10vmin;
-}
-
-.purchase .cards .card {
-  width: 22rem;
-  margin: 3vmin 3vmin;
-}
-
-.cards div {
-  padding: 0;
-  margin: 0;
-}
-
-.cards .title {
-  background: rgba(208, 241, 241, 0.199);
-  padding: 1.4em 2.5em;
-  font-size: 2vmin;
-}
-
-.card .card-text {
-  padding: 2.5rem 3rem;
-  color: var(--light-black);
-}
-
-.card-body .pricing {
-  background: rgba(208, 241, 241, 0.199);
-  border-top-right-radius: 170px;
-  border-top-left-radius: 170px;
-}
-
-.card-body .pricing > h1 {
-  font-size: 10vmin;
-  padding: 1em 0.5em;
-}
-
-/* Section 3 */
+/* Section 3 - THE BIGGEST ADV.....  */
 
 .section-3 {
   height: 90vmin;
@@ -748,50 +405,9 @@ header .container .col-md-7 p {
   font-size: 3vmin;
 }
 
-.section-3 .desktop {
-  background: lightgrey;
-  display: inline-block;
-  
-  border-radius: 3em;
-  padding: 2vmin 4.5vmin;
-  margin: 1em;
-}
-
-.section-3 .desktop h3 {
-  font-size: 4vmin;
-}
-
-.section-3 .desktop p {
-  font-size: 2vmin;
-}
-
-
-
-footer {
-  background: rgba(0, 0, 0, 0.815);
-  overflow-x: hidden;
-  padding: 14vmin 18vmin;
-}
-
-
-footer input {
-  border: none !important;
-}
-
-footer .input-group .input-group-text {
-  background: lightgrey;
-  border: none;
-}
-
-
-/* It is Adjacent sibling combinator */
-
-footer .column i + i {
-  padding: 0 0.5em;
-}
-
 .fab{
   color: lightblue;
   margin-left: 10px;
   
 }
+

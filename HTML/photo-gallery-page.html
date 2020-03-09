@@ -5,24 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Photo Gallery</title>
-
+  <!-- responsive menu icon -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <!-- Bootstrap CSS File -->
   <link href="/CSS/bootstrap.css" rel="stylesheet">
-
-
-  <!-- Main Stylesheet File -->
   <link href="/CSS/photo-gallery-page.css" rel="stylesheet">
-
-  <!-- Responsive css -->
   <link href="/CSS/responsive.css" rel="stylesheet">
-
 </head>
 
 <body>
 
-  <!-- start section navbar -->
+  <!-- NAVBAR -->
 
   <div class="topnav" id="myTopnav">
     <a href="/index.html" />
@@ -40,10 +32,10 @@
       <i class="fa fa-bars"></i>
     </a>
   </div>
-  <!-- End section navbar -->
+  <!-- END -->
 
 
-  <!-- start section header -->
+  <!-- HEADER  -->
   <div id="header" class="home">
 
     <div class="container">
@@ -52,7 +44,9 @@
       </div>
     </div>
   </div>
-  <!-- End section header -->
+  <!-- END -->
+
+  <!-- START - RESPONSIVE GALLERY !!  -->
   <h2 class="heading-descr">Welcome to my world</h2>
 
   <div class="responsive-gallery">
@@ -83,8 +77,6 @@
     </div>
   </div>
 
-
-
   <div class="responsive-gallery">
     <div class="gallery">
       <a href="/assets/sua1.JPG" target="blank"><img src="/assets/sua1.JPG" width="300" height="200"></a>
@@ -112,8 +104,6 @@
       <div class="ph-description">USA 2018</div>
     </div>
   </div>
-
-
 
   <div class="responsive-gallery">
     <div class="gallery">
@@ -172,41 +162,12 @@
     </div>
   </div>
 
-
-  <!-- start section footer -->
+  <!-- FOOTER -->
   <div id="footer" class="text-center">
       <p>&copy; Copyrights Bogdan Cristian. All rights reserved.</p>
   </div>
 
-  <script>
-    function myFunction2() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-  </script>
-  <script>
-    window.onscroll = function () { myStickyFunction() };
-
-    var navbar = document.getElementById("myTopnav");
-    var sticky = navbar.offsetTop;
-
-    function myStickyFunction() {
-      if (window.pageYOffset >= sticky) {
-        myTopnav.classList.add("sticky")
-      } else {
-        myTopnav.classList.remove("sticky");
-      }
-    }
-  </script>
-
-  <!-- JavaScript Libraries -->
   <script src="/JS/jquery.min.js"></script>
-
-  <!-- Template Main Javascript File -->
   <script src="/JS/photo-gallery-script.js"></script>
   <script src="/JS/typed.js"></script>
 

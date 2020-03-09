@@ -4,33 +4,8 @@ $(document).ready(function() {
     'use strict';
   
   
-    //  //NAVBAR SHOW - HIDE
-   
-  
-  
-    // $(window).scroll(function() {
-    //   var scroll = $(window).scrollTop();
-    //   if (scroll > 0 ) {
-    //     $("#main-nav, #main-nav-subpage").slideDown(700);
-    //     $("#main-nav-subpage").removeClass('subpage-nav');
-    //   } else {
-    //     $("#main-nav").slideUp(700);
-    //     $("#main-nav-subpage").hide();
-    //     $("#main-nav-subpage").addClass('subpage-nav');
-    //   }
-    // });
-  
-    // // ========================================================================= //
-    // //  // RESPONSIVE MENU
-    // // ========================================================================= //
-  
-    // $('.responsive').on('click', function(e) {
-    //   $('.nav-menu').slideToggle();
-    // });
-  
-    // ========================================================================= //
-    //  Typed Js
-    // ========================================================================= //
+
+    // TYPED JS 
   
     var typed = $(".typed");
   
@@ -42,6 +17,31 @@ $(document).ready(function() {
       });
     });
 
+    // RESPONSIVE NAV
+
+    function myFunction2() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+
+  // STICKY MENU !!!
+
+    window.onscroll = function () { myStickyFunction() };
+
+    var navbar = document.getElementById("myTopnav");
+    var sticky = navbar.offsetTop;
+
+    function myStickyFunction() {
+      if (window.pageYOffset >= sticky) {
+        myTopnav.classList.add("sticky")
+      } else {
+        myTopnav.classList.remove("sticky");
+      }
+    }
   
   });
   

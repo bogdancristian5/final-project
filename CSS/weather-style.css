@@ -4,8 +4,7 @@
 
 body{
     background-image: url(/assets/weather.jpg);
-    background-size: 1550px;
-    
+    background-size: 1550px;    
 }
 
 .container{
@@ -16,14 +15,12 @@ body{
     margin: 100px auto;    
     border-radius: 35px;
     padding-bottom : 50px;
-
 }
 
 .app-title{
     width: 300px;
     height: 50px;
-    border-radius: 10px 10px 0 0;
-    
+    border-radius: 10px 10px 0 0;    
 }
 
 .app-title p{
@@ -32,7 +29,6 @@ body{
     margin: 0 auto;
     font-size: 2.5em;
     color: black;
-
 }
 
 .notification{
@@ -94,7 +90,6 @@ body{
     font-size: 1.5em;
 }
 
-
 .location p{
     margin: 0;
     padding: 0;
@@ -103,9 +98,7 @@ body{
     font-size: 2.5em;
 }
 
-
-
-/* NAVBARRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR */
+/* NAVBARR */
 
 /* Add a black background color to the top navigation */
 
