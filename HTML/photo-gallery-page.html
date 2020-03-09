@@ -164,9 +164,18 @@
 
   <!-- FOOTER -->
   <div id="footer" class="text-center">
-      <p>&copy; Copyrights Bogdan Cristian. All rights reserved.</p>
+    <p>&copy; Copyrights Bogdan Cristian. All rights reserved.</p>
   </div>
-
+  <script>
+    function myFunction2() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
   <script src="/JS/jquery.min.js"></script>
   <script src="/JS/photo-gallery-script.js"></script>
   <script src="/JS/typed.js"></script>

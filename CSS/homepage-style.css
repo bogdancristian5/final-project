@@ -375,7 +375,7 @@ footer {
 }
 
 .numbers {
-  margin-top: -15vmin;
+  margin-top: -10vmin;
 }
 
 .numbers .about-section h1 {
@@ -386,10 +386,11 @@ footer {
 /* Section 3 - THE BIGGEST ADV.....  */
 
 .section-3 {
-  height: 90vmin;
-  margin-top: 15vmin;
+  height: 50vmin;
   background: var(--bggradient);
   overflow: hidden;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 .section-3 .col-md-12 > h1 {
