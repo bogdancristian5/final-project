@@ -144,6 +144,23 @@ body {
   padding-top: 60px;
 }
 
+#myCVBtn {
+  font-size: 18px;
+  background-color: rgb(39, 38, 38);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  border: 0;
+  margin-left: 6px;
+}
+
+#myCVBtn:hover {  
+  background-color: rgb(255, 168, 168);
+  color: black;
+
+}
+
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
   .topnav a {display: none;}
