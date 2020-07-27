@@ -1,7 +1,4 @@
 
-
-
-
 let nCount = selector => {
   $(selector).each(function () {
     $(this)

@@ -212,8 +212,7 @@ nav ul li a {
 }
 
 header .row .col-md-7 {
-  padding: 22vmin 1vmin;
-  padding-bottom: 35vmin;
+  padding: 15vmin 1vmin;
 }
 
 header .row .col-md-5 {
@@ -243,6 +242,8 @@ header .container .col-md-7 p {
   height: 100vh;
   width: 100%;
 }
+
+
 
 
 #header .header-content {
@@ -412,3 +413,6 @@ footer {
   
 }
 
+#gameBtn{
+  margin-top: 25px;
+}

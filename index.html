@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>HomePage</title>
+  <title>Home</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 
@@ -51,8 +51,8 @@
                 <a href="https://www.instagram.com/bogdancristian5/" target="blank">Instagram</a>
                 <a href="https://www.linkedin.com/in/bogdan-cristian-386236162/" target="blank">LinkedIn</a>
           </li>
-          </ul>
-          </a>
+        </ul>
+        </a>
       </div>
     </div>
   </nav>
@@ -68,16 +68,18 @@
       <div class="row">
         <div class="col-md-7 col-sm-12  text-white">
 
-          <button onclick="window.location.href='/HTML/weather.html'" type="button"
-            class="btn btn-light px-5 py-2 primary-btn" id="weatherBtn">
-            Current Weather
-          </button>
+
 
           <p id="date"></p>
 
           <body onload="startTime()">
             <div id="timeID"></div>
             <br>
+
+            <button onclick="window.location.href='/HTML/weather.html'" type="button"
+              class="btn btn-light px-5 py-2 primary-btn" id="weatherBtn">
+              Current Weather
+            </button>
 
             <p class="quote-p">
               “If you can't fly, then run, if you can't run, then walk, if you can't walk, then crawl,
@@ -86,9 +88,16 @@
             </p>
 
             <button onclick="window.location.href='/HTML/about-page.html'" type="button"
-              class="btn btn-light px-5 py-2 primary-btn" id="aboutMeBtn">
+              class="btn btn-light px-5 py-2 primary-btn">
               About Me
             </button>
+            <br>
+
+            <button onclick="window.location.href='/HTML/game.html'" type="button"
+              class="btn btn-light px-5 py-2 primary-btn" id="gameBtn">
+              Let's play a cool game
+            </button>
+
         </div>
         <div class="col-md-5 col-sm-12">
           <img src="/assets/we-mad-here.jpg" alt="Book" />
@@ -114,9 +123,9 @@
               <h1>Bogdan Cristian</h1>
               <p>
                 Hi there !
-                As you probably know, my name is Bogdan Cristian and this is my blog.
-                I'm a 24 years old guy, born and raised in Alba Iulia, Romania. I started
-                5 months ago "Scoala Informala de IT" from Cluj Napoca, thinking about my future.
+                My name is Bogdan Cristian and this is my blog.
+                I'm a 25 years old guy, born and raised in Alba Iulia, Romania. In October 2019 I started
+                 "Scoala Informala de IT" from Cluj Napoca, thinking about my future.
               </p>
               <p>
                 This is my final individual project, so let's cross the fingers and work as
@@ -145,7 +154,7 @@
           </div>
 
           <div class="about-section">
-            <h1>24</h1>
+            <h1>25</h1>
             <p>Years Old</p>
           </div>
 
@@ -174,15 +183,15 @@
             <div class="carousel-item active">
               <img class="d-block w-100" src="./assets/carousel4.JPG" alt="4">
             </div>
-            
+
             <div class="carousel-item">
               <img class="d-block w-100" src="./assets/carousel2.JPG" alt="Second slide">
             </div>
-            
+
             <div class="carousel-item">
               <img class="d-block w-100" src="./assets/carousel3.JPG" alt="Third slide">
             </div>
-            
+
             <div class="carousel-item">
               <img class="d-block w-100" src="./assets/carousel1.JPG" alt="First slide">
             </div>
@@ -212,17 +221,17 @@
 
         <!-- END OF CAROUSEL BOOTSTRAP ====================================== -->
 
-    <section class="section-3 container-fluid p-0 text-center">
-      <div class="row">
-        <div class="col-md-12 col-sm-12">
-          <h1>“The biggest adventure you can ever take is to live the life of your dreams.”</h1>
-          <p>
-            As you can see, I really enjoy traveling. If you want my advice, just try to take some
-            risks and live your life beyond limits.
-          </p>
-        </div>
-      </div>
-    </section>
+        <section class="section-3 container-fluid p-0 text-center">
+          <div class="row">
+            <div class="col-md-12 col-sm-12">
+              <h1>“The biggest adventure you can ever take is to live the life of your dreams.”</h1>
+              <p>
+                As you can see, I really enjoy traveling. If you want my advice, just try to take some
+                risks and live your life beyond limits.
+              </p>
+            </div>
+          </div>
+        </section>
   </main>
 
   <footer>
